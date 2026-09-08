@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your Chemistry learning dashboard with Dr. Pamerla Murali Dhar." />
+    <meta name="theme-color" content="#7C62DD" />
+    <title>My Account | Dr. Pamerla Murali Dhar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lily+Script+One&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  </head>
+  <body data-auth-page="dashboard">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header" data-header>
+      <div class="container header-content">
+        <a class="brand" href="index.html" aria-label="Dr. Pamerla Murali Dhar Chemistry Tuition home"><span class="brand-mark" aria-hidden="true">PM</span><span class="brand-name">Dr. Pamerla<br />Murali Dhar</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-navigation>
+          <a href="index.html">Home</a><a href="about.html">About</a><a href="courses.html">Courses</a><a href="teaching.html">Teaching Approach</a><a href="resources.html">Resources</a><a href="research.html">Academic &amp; Research</a><a href="contact.html">Contact</a><a class="is-current" href="dashboard.html" aria-current="page">My Account</a><a class="button button--small button--primary nav-cta" href="contact.html">Enquire Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="dashboard-shell section">
+        <div class="container">
+          <div class="dashboard-heading"><div><p class="eyebrow"><span></span> My account</p><h1>Welcome, <span data-dashboard-name>there</span>.</h1><p>Your Chemistry learning space is ready for what comes next.</p></div><button class="button button--secondary" type="button" data-logout>Log out</button></div>
+          <div class="account-badge"><span>Account type</span><strong data-dashboard-account-type>Loading…</strong></div>
+          <div class="dashboard-grid">
+            <section class="dashboard-panel dashboard-panel--wide"><div class="panel-heading"><div><p class="eyebrow"><span></span> Learning</p><h2>My Courses</h2></div></div><div class="empty-state"><strong>No courses yet</strong><p>Your enrolled Chemistry courses will appear here when available.</p></div></section>
+            <section class="dashboard-panel dashboard-panel--wide"><div class="panel-heading"><div><p class="eyebrow"><span></span> Schedule</p><h2>Upcoming Live Classes</h2></div></div><div class="empty-state"><strong>No live classes scheduled</strong><p>Upcoming live learning sessions will appear here when available.</p></div></section>
+            <section class="dashboard-panel dashboard-profile"><div class="panel-heading"><div><p class="eyebrow"><span></span> Profile</p><h2>Account details</h2></div></div><dl class="profile-details"><div><dt>Name</dt><dd data-profile-name>Loading…</dd></div><div><dt>Email</dt><dd data-profile-email>Loading…</dd></div><div><dt>Phone</dt><dd data-profile-phone>Loading…</dd></div><div><dt>Created</dt><dd data-profile-created>Loading…</dd></div><div><dt>Firebase UID</dt><dd data-profile-uid>Loading…</dd></div></dl></section>
+          </div>
+          <p class="auth-message auth-message--error dashboard-message" data-auth-error role="alert" hidden></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-bottom auth-footer-bottom"><p>© <span data-year></span> Dr. Pamerla Murali Dhar. All rights reserved.</p><p><a href="index.html">Back to public website</a></p></div></footer>
+    <script src="script.js"></script>
+    <script type="module" src="auth.js"></script>
+  </body>
+</html>
